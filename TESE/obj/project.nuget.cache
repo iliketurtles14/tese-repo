@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DywHmm93x5Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\creep\\source\\repos\\TESE\\TESE\\TESE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\creep\\.nuget\\packages\\spectre.console\\0.50.0\\spectre.console.0.50.0.nupkg.sha512",
+    "C:\\Users\\creep\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\TESE.exe
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\TESE.deps.json
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\TESE.runtimeconfig.json
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\TESE.dll
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\TESE.pdb
+C:\Users\creep\source\repos\TESE\TESE\bin\Release\net8.0\Spectre.Console.dll
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.csproj.AssemblyReference.cache
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.AssemblyInfoInputs.cache
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.AssemblyInfo.cs
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.csproj.CoreCompileInputs.cache
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.csproj.Up2Date
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.dll
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\refint\TESE.dll
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.pdb
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.genruntimeconfig.cache
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\ref\TESE.dll
