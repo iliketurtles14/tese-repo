@@ -9,6 +9,7 @@ C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.GeneratedMSBuildEd
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.AssemblyInfoInputs.cache
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.AssemblyInfo.cs
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.csproj.CoreCompileInputs.cache
+C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.sourcelink.json
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.csproj.Up2Date
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\TESE.dll
 C:\Users\creep\source\repos\TESE\TESE\obj\Release\net8.0\refint\TESE.dll

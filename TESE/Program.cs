@@ -20,6 +20,7 @@ namespace TESE
         private static string editSelection;
         private static string[] saveFile;
         private static bool comingFromInv = false;
+        private static bool goToCategorySelect = false;
 
         static void Main(string[] args)
         {
@@ -30,30 +31,13 @@ namespace TESE
             while (true)
             {
                 CategorySelect();
-                if (category == "[green]Save File[/] and [red]Exit[/]")
+                EditSelect();
+                if (goToCategorySelect)
                 {
-                    OverwriteSaveFile();
-                    Environment.Exit(0);
+                    goToCategorySelect = false;
+                    continue;
                 }
-                else if (category == "[red]Exit Without Saving[/]")
-                {
-                    Environment.Exit(0);
-                }
-
-                while (true)
-                {
-                    
-                    EditSelect();
-                    if (editSelection == "[green]Select Different Category[/]")
-                        break; // Go back to category selection
-
-                    EditTheSelection();
-                    if (comingFromInv)
-                    {
-                        comingFromInv = false;
-                        break;
-                    }
-                }
+                EditTheSelection();
             }
         }
         private static void AskForPath()
@@ -124,6 +108,9 @@ namespace TESE
         }
         private static void EditSelect()
         {
+            comingFromInv = false;
+            goToCategorySelect = false;
+            editSelection = null;
             switch (category)
             {
                 case "Player":
@@ -156,19 +143,26 @@ namespace TESE
                         "Names", "Stats", "[green]Select Different Category[/]"
                     };
                     break;
-                default:
+                case "Inmate Inventories":
+                case "Guard Inventories":
+                case "Desks":
                     comingFromInv = true;
-                    return;
+                    break;
                     
             }
-            comingFromInv = false;
-            editSelection = AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                    .Title("Select what you want to [green]edit[/].")
-                    .PageSize(15)
-                    .AddChoices(editPromptArray)
-            );
-               
+            if (!comingFromInv)
+            {
+                editSelection = AnsiConsole.Prompt(
+                    new SelectionPrompt<string>()
+                        .Title("Select what you want to [green]edit[/].")
+                        .PageSize(15)
+                        .AddChoices(editPromptArray)
+                );
+            }
+            if (editSelection == "[green]Select Different Category[/]")
+            {
+                goToCategorySelect = true;
+            }
         }
         
         private static void EditTheSelection()
@@ -576,7 +570,10 @@ namespace TESE
                                 AnsiConsole.MarkupLine("[blue](Example: 123,456,789,132)[/]");
                                 string shopItems = AnsiConsole.Prompt(
                                     new TextPrompt<string>("[yellow]New shop items[/] :"));
-                                EditSave("Inmates", inmateNum.ToString(), shopItems.Replace(" ", ""), 8);
+                                shopItems = shopItems.Replace(" ", "");
+                                shopItems = shopItems.Replace(",", "_100,");
+                                shopItems = shopItems + "_100";
+                                EditSave("Inmates", inmateNum.ToString(), shopItems, 8);
                                 Console.Clear();
 
 
